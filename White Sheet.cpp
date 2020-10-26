@@ -22,6 +22,24 @@ void setIO(string name = "") {
         freopen((name+".out").c_str(), "w", stdout);
     }
 } 
+void show(vector<ll> v)
+{
+    for(ll i=0; i<v.size(); i++)
+        cout<<v[i]<<" ";
+    cout<<"\n";
+}
+void showrev(vector<ll> v)
+{
+    for(ll i=0; i<v.size(); i++)
+        cout<<v[v.size()-i-1]<<" ";
+    cout<<"\n";
+}
+void showarr(ll arr[],ll n)
+{
+    for(ll i=0; i<n; i++)
+        cout<<arr[i]<<" ";
+    cout<<"\n";
+}
 struct Rect{
 	int x1,y1,x2,y2;
 	int area()
