@@ -33,7 +33,7 @@ int main() {
 		v.pb(num);	
 	}
 	int sorted=1;
-	for(int i=n-1; i>0; i--)
+	for(int i=n-1; i>0; i++)
 	{
 		if(v[i]>=v[i-1])
 		sorted++;
